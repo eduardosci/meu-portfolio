@@ -1,24 +1,54 @@
-import { cn } from "@/app/lib/utils"
+'use client'
+
+import { cn } from "@/app/lib/utils";
+import { motion } from "framer-motion";
 
 type SectionTitleProps = {
-    title: string
-    subtitle: string
-    classname?: string
-}
+    title: string;
+    subtitle: string;
+    classname?: string;
+};
 
 export const SectionTitle = ({
     title,
     subtitle,
     classname
 }: SectionTitleProps) => {
-    return(
-        <div className={cn('flex flex-col gap-4', classname)}>
-            <span className="font-mono text-sm text-sky-300">
+    return (
+        <motion.div 
+            className={cn('flex flex-col gap-4', classname)}
+            initial="hidden"
+            animate="visible"
+            variants={{
+                hidden: {},
+                visible: {
+                    transition: {
+                        staggerChildren: 0.1
+                    }
+                }
+            }}
+        >
+            <motion.span 
+                className="font-mono text-sm text-sky-300"
+                variants={{
+                    hidden: { opacity: 0, y: 20 },
+                    visible: { opacity: 1, y: 0 }
+                }}
+                transition={{ duration: 0.6, ease: "easeOut" }}
+            >
                 {`../${subtitle}`}
-            </span>
-            <h3 className="text-3xl font-medium">
+            </motion.span>
+
+            <motion.h3 
+                className="text-3xl font-medium"
+                variants={{
+                    hidden: { opacity: 0, y: 20 },
+                    visible: { opacity: 1, y: 0 }
+                }}
+                transition={{ duration: 0.6, ease: "easeOut", delay: 0.1 }}
+            >
                 {title}
-            </h3>
-        </div>
-    )
-}
+            </motion.h3>
+        </motion.div>
+    );
+};
