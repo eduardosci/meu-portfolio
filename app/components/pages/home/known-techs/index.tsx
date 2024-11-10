@@ -11,7 +11,7 @@ export const KnownTechs = () => {
             <SectionTitle subtitle="Competências" title="Conhecimentos" />
 
             <motion.div 
-                className="grid grid-cols-[repeat(auto-fit, minmax(264px, 1fr))] grid-cols-3 gap-3 mt-[60px]"
+                className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-[60px]"
                 initial="hidden"
                 animate="visible"
                 variants={{

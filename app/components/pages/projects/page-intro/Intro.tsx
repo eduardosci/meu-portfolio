@@ -1,10 +1,10 @@
-import { SectionTitle } from "@/app/components/section-title/Title"
-import { HiArrowNarrowLeft } from "react-icons/hi"
-import Link from "next/link"
+import { SectionTitle } from "@/app/components/section-title/Title";
+import { HiArrowNarrowLeft } from "react-icons/hi";
+import Link from "next/link";
 
 export const PageIntro = () => {
-    return(
-        <section className="w-full min-h-[450px] lg:min-h-[630px] bg-bg-intro bg-cover bg-center bg-no-repeat flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8">
+    return (
+        <section className="w-full min-h-[800px] sm:min-h-[850px] lg:min-h-[630px] bg-bg-intro bg-cover bg-center bg-no-repeat flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8">
             <SectionTitle 
                 subtitle="projetos"
                 title="Meus Projetos"
@@ -22,5 +22,5 @@ export const PageIntro = () => {
                 </Link>
             </div>
         </section>
-    )
-}
+    );
+};

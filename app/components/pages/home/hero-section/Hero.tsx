@@ -13,7 +13,7 @@ const MOCK_CONTACTS = [
         icon: <TbBrandGithub />
     },
     {
-        url: 'https://www.linkedin.com/feed/',
+        url: 'https://www.linkedin.com/in/eduardoalvesred04',
         icon: <TbBrandLinkedin />
     },
     {
@@ -61,7 +61,7 @@ export const HeroSection = () => {
 
                     <p className="text-gray-300 my-6 text-sm sm:text-base">Bem-vindo ao meu espaço digital! Sou fascinado por ciência e tecnologia, profissional de inteligência artificial com expertise em visão computacional, onde mergulho profundamente para criar soluções inovadoras que ampliam a capacidade de percepção das máquinas. Este portfólio é um reflexo do meu trabalho, onde compartilho projetos que vão desde a detecção de objetos até a análise de imagens geoespaciais.</p>
 
-                    <div className="flex flex-wrap gap-x-2 gap-y-3 lg:max-w-[348px]">
+                    <div className="flex flex-wrap gap-x-2 gap-y-2 lg:max-w-[348px]">
                         {TECHNOLOGIES.map((tech, index) => (
                             <motion.div 
                                 key={index}

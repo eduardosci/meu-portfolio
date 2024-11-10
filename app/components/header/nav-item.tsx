@@ -18,7 +18,7 @@ export const NavItem = ({ label, href }: NavItemProps) => {
             "text-gray-400 flex items-center gap-2 font-medium font-mono text-sm sm:text-lg md:text-xl", // Responsividade no tamanho do texto
             isActive && 'text-gray-50',
         )}>
-            <span className="text-sky-400 opacity-90 text-xs sm:text-sm md:text-base">#</span>
+            <span className="text-sky-400 opacity-90 text-xs sm:text-sm md:text-2xl">#</span>
             {label}
         </Link>
     )

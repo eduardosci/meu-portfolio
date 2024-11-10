@@ -54,7 +54,7 @@ export const ProjectCard = () => {
             />
             <Card
                 title="Human Eyes CNN"
-                description="Detecção de olhos abertos e fechados usando uma rede neural convolucional."
+                description="Detecção de olhos abertos e fechados usando uma rede neural convolucional..."
                 techs="PyTorch, Pandas"
                 imageSrc="/images/eyes.png"
                 altText="imagem projeto eyes"
@@ -63,7 +63,7 @@ export const ProjectCard = () => {
             <Card
                 title="Previsão de Burnout"
                 description="Modelo para prever o risco de burnout em profissionais..."
-                techs="Sklearn, Pandas, PyCaret, LightGBM, XGBoost"
+                techs="Sklearn, Pandas, LightGBM, XGBoost"
                 imageSrc="/images/burnout.jpg"
                 altText="imagem projeto burnout"
                 githubLink="https://github.com/eduardosci/burnout_prediction"

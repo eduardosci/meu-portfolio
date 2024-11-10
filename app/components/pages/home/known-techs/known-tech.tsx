@@ -14,7 +14,7 @@ export const KnownTech = ({ tech }: KnownTechProps) => {
         new Date(tech.startData), 'pt-BR',
     ).replace('há ', '')
     return(
-        <div className="p-6 rounded-lg bg-gray-600/50 text-gray-300 flex flex-col gap-2 hover:text-sky-400 hover:bg-gray-400/20 transition-all">
+        <div className="p-6 rounded-lg bg-sky-500/70 text-gray-200 flex flex-col gap-2 hover:text-sky-400 hover:bg-gray-400/20 transition-all">
             <div className="flex items-center justify-between">
                 <p className="font-medium">{tech.name}</p>
                 {tech.icon}
